@@ -1,4 +1,9 @@
-<?php class Client
+<?php
+
+include "Dog.php";
+include "Fish.php";
+
+class Client
 {
     public function __construct()
     {
@@ -12,6 +17,16 @@
         $this->setupAnimal($cat);
         $this->setupAnimal($dog);
         $this->setupAnimal($fish);
+    }
+
+    public function setupFeline(Feline $cat)
+    {
+        echo 'Feline: ' . $this->iAmA($cat), ' and ',$cat->chase(), ' ', $cat->eat() . '<br>';
+    }
+
+    public function setupCanine(Canine $dog)
+    {
+        echo 'Canine: ' . $this->iAmA($dog), ' ', $dog->howl() . '<br>';
     }
 
     public function setupAnimal(Animal $animal)

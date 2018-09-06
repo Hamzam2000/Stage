@@ -1,4 +1,9 @@
-<?php class Dog extends Animal implements Canine, Mammal
+<?php
+
+include 'Animal.php';
+include "Canine.php";
+
+class Dog extends Animal implements Canine, Mammal
 {
     private $name;
     private $gender;
@@ -21,6 +26,21 @@
         } else {
             throw new InvalidArgumentException('Mammals can only be male or female');
         }
+    }
+
+    public function eat()
+    {
+        return 'I eat meat.';
+    }
+
+    public function bark()
+    {
+        return 'Woof, woof!';
+    }
+
+    public function howl()
+    {
+        return 'AHROOOOOOO WOO WOOO!';
     }
 
     public function getGender()
