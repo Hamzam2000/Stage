@@ -1,8 +1,5 @@
 <?php
 
-include 'Animal.php';
-include "Canine.php";
-
 class Dog extends Animal implements Canine, Mammal
 {
     private $name;

@@ -1,7 +1,5 @@
 <?php
 
-include "Mammal.php";
-include "Feline.php";
 
 abstract class Animal
 {

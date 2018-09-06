@@ -1,8 +1,5 @@
 <?php
 
-include "Dog.php";
-include "Fish.php";
-
 class Client
 {
     public function __construct()
@@ -39,5 +36,3 @@ class Client
         return 'I am a ' . get_class($animal);
     }
 }
-
-$client = new Client; ?>
